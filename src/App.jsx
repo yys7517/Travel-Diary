@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
+import TravelForm from "./components/TravelForm";
 
 function App() {
   // 여행 리스트 데이터
