@@ -111,11 +111,11 @@ function App() {
         onUpdate={handleUpdate}
         onCancelEdit={handleCancelEdit}
       />
-      <TravelList
+      {/* <TravelList
         travels={travels}
         onEdit={handleEdit}
         onDelete={handleDelete}
-      />
+      /> */}
     </div>
   );
 }
