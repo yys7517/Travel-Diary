@@ -2,12 +2,11 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import TravelForm from "./components/TravelForm";
+import TravelList from "./components/TravelList";
 
 function App() {
   // 여행 리스트 데이터
   // useState(value) 대신 useState(()=>value 계산) 형식으로 첫 렌더링 때만 localStorage를 읽음
-
-  const [numbers, setNumbers] = useState([0, 1, 2, 3, 4]);
 
   const [travels, setTravels] = useState(() => {
     const saved = localStorage.getItem("travels");
@@ -111,11 +110,11 @@ function App() {
         onUpdate={handleUpdate}
         onCancelEdit={handleCancelEdit}
       />
-      {/* <TravelList
+      <TravelList
         travels={travels}
         onEdit={handleEdit}
         onDelete={handleDelete}
-      /> */}
+      />
     </div>
   );
 }
